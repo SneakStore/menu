@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu en Format A4 avec Défilement</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden; /* Désactiver le défilement de la fenêtre */
+        }
+        .container {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: auto; /* Activer le défilement de la zone de contenu */
+        }
+        .a4-image {
+            max-width: 100%; /* Largeur maximale de l'image */
+            height: auto; /* Hauteur adaptative */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="file:///C:/Users/acer/Desktop/qr_code_with_image%20(12).png" alt="Menu" class="a4-image">
+    </div>
+</body>
+</html>
